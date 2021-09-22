@@ -39,8 +39,8 @@ in the process. Also, a number of tools are needed:
 ## BOM
 
 The BOMs for the PCBs can be found in their folders:
-(./controller-pcb/ibom.html)
-(./multiplexer-pcb/ibom.html)
+[controller](./controller-pcb/ibom.html)
+[multiplexer](./multiplexer-pcb/ibom.html)
 
 ## Firmware
 
