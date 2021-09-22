@@ -1,0 +1,944 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Memory_Flash:MX25R3235FM1xx0 U1
+U 1 1 611EB7C5
+P 8600 1300
+F 0 "U1" H 9500 1350 50  0000 L CNN
+F 1 "MX25R3235FM1xx0" H 9500 1250 50  0000 L CNN
+F 2 "Package_SO:SOP-8_5.28x5.23mm_P1.27mm" H 8600 700 50  0001 C CNN
+F 3 "http://www.macronix.com/Lists/Datasheet/Attachments/7534/MX25R3235F,%20Wide%20Range,%2032Mb,%20v1.6.pdf" H 8600 1300 50  0001 C CNN
+	1    8600 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J1
+U 1 1 611EC5D5
+P 5900 1300
+F 0 "J1" H 5950 1717 50  0000 C CNN
+F 1 "EHX_CONN" H 5950 1626 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 5900 1300 50  0001 C CNN
+F 3 "~" H 5900 1300 50  0001 C CNN
+	1    5900 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS138 U7
+U 1 1 611ECD31
+P 6750 2750
+F 0 "U7" H 6950 3400 50  0000 C CNN
+F 1 "74LS138" H 7050 3300 50  0000 C CNN
+F 2 "Package_SO:SO-16_5.3x10.2mm_P1.27mm" H 6750 2750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS138" H 6750 2750 50  0001 C CNN
+	1    6750 2750
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	5350 1300 5450 1400
+Entry Wire Line
+	5350 1400 5450 1500
+Wire Wire Line
+	5450 1400 5700 1400
+Entry Wire Line
+	6550 1400 6650 1300
+Entry Wire Line
+	6550 1300 6650 1200
+Entry Wire Line
+	6550 1500 6650 1400
+Wire Bus Line
+	5350 750  6650 750 
+Connection ~ 6650 750 
+Wire Bus Line
+	6650 750  7850 750 
+Wire Wire Line
+	6200 1300 6550 1300
+Wire Wire Line
+	6200 1400 6550 1400
+Text Label 5550 1200 0    50   ~ 0
+RST
+NoConn ~ 5700 1100
+NoConn ~ 6200 1100
+NoConn ~ 6200 1200
+$Comp
+L Memory_Flash:MX25R3235FM1xx0 U2
+U 1 1 6120628D
+P 8600 2300
+F 0 "U2" H 9500 2350 50  0000 L CNN
+F 1 "MX25R3235FM1xx0" H 9500 2250 50  0000 L CNN
+F 2 "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" H 8600 1700 50  0001 C CNN
+F 3 "http://www.macronix.com/Lists/Datasheet/Attachments/7534/MX25R3235F,%20Wide%20Range,%2032Mb,%20v1.6.pdf" H 8600 2300 50  0001 C CNN
+	1    8600 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0101
+U 1 1 61207763
+P 6950 1500
+F 0 "#PWR0101" H 6950 1350 50  0001 C CNN
+F 1 "+3.3V" H 6965 1673 50  0000 C CNN
+F 2 "" H 6950 1500 50  0001 C CNN
+F 3 "" H 6950 1500 50  0001 C CNN
+	1    6950 1500
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	7850 1000 7950 1100
+Entry Wire Line
+	7850 1100 7950 1200
+Entry Wire Line
+	7850 1400 7950 1500
+Entry Wire Line
+	7850 1300 7950 1400
+Wire Bus Line
+	7850 750  9350 750 
+Connection ~ 7850 750 
+Entry Wire Line
+	9250 1300 9350 1200
+Entry Wire Line
+	9250 900  9350 800 
+Wire Wire Line
+	9250 900  8800 900 
+Text Label 9000 900  0    50   ~ 0
+VCC
+Entry Wire Line
+	9250 1700 9350 1600
+Entry Wire Line
+	9250 1900 9350 1800
+Entry Wire Line
+	9250 2300 9350 2200
+Wire Wire Line
+	9100 1300 9250 1300
+Wire Wire Line
+	8800 1700 9250 1700
+Wire Wire Line
+	8800 1900 9250 1900
+Wire Wire Line
+	9100 2300 9250 2300
+Entry Wire Line
+	9250 2700 9350 2600
+Wire Wire Line
+	8800 2700 9250 2700
+Wire Wire Line
+	7950 1100 8100 1100
+Wire Wire Line
+	7950 1200 8100 1200
+Wire Wire Line
+	7950 1400 8100 1400
+Wire Wire Line
+	7950 1500 8100 1500
+Entry Wire Line
+	7850 2000 7950 2100
+Entry Wire Line
+	7850 2100 7950 2200
+Entry Wire Line
+	7850 2300 7950 2400
+Entry Wire Line
+	7850 2400 7950 2500
+Wire Wire Line
+	7950 2100 8100 2100
+Wire Wire Line
+	7950 2200 8100 2200
+Wire Wire Line
+	7950 2400 8100 2400
+Wire Wire Line
+	7950 2500 8100 2500
+Wire Wire Line
+	8100 1300 8000 1300
+Wire Wire Line
+	8000 1300 8000 1250
+Wire Wire Line
+	8000 1250 7400 1250
+Wire Wire Line
+	7400 1250 7400 2450
+Wire Wire Line
+	7400 2450 7250 2450
+Wire Wire Line
+	7450 2550 7250 2550
+$Comp
+L power:+3.3V #PWR0102
+U 1 1 6121B77F
+P 6750 2000
+F 0 "#PWR0102" H 6750 1850 50  0001 C CNN
+F 1 "+3.3V" H 6765 2173 50  0000 C CNN
+F 2 "" H 6750 2000 50  0001 C CNN
+F 3 "" H 6750 2000 50  0001 C CNN
+	1    6750 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 2000 6750 2050
+$Comp
+L power:GND #PWR0103
+U 1 1 6121D045
+P 6750 3600
+F 0 "#PWR0103" H 6750 3350 50  0001 C CNN
+F 1 "GND" H 6755 3427 50  0000 C CNN
+F 2 "" H 6750 3600 50  0001 C CNN
+F 3 "" H 6750 3600 50  0001 C CNN
+	1    6750 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 6121DC3E
+P 5250 1500
+F 0 "#PWR0104" H 5250 1250 50  0001 C CNN
+F 1 "GND" H 5255 1327 50  0000 C CNN
+F 2 "" H 5250 1500 50  0001 C CNN
+F 3 "" H 5250 1500 50  0001 C CNN
+	1    5250 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 3450 6750 3550
+$Comp
+L power:GND #PWR0105
+U 1 1 6121EC2C
+P 6150 3250
+F 0 "#PWR0105" H 6150 3000 50  0001 C CNN
+F 1 "GND" H 6155 3077 50  0000 C CNN
+F 2 "" H 6150 3250 50  0001 C CNN
+F 3 "" H 6150 3250 50  0001 C CNN
+	1    6150 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0106
+U 1 1 6121F24D
+P 6150 2950
+F 0 "#PWR0106" H 6150 2800 50  0001 C CNN
+F 1 "+3.3V" H 6165 3123 50  0000 C CNN
+F 2 "" H 6150 2950 50  0001 C CNN
+F 3 "" H 6150 2950 50  0001 C CNN
+	1    6150 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 61222784
+P 3200 4450
+F 0 "#PWR0107" H 3200 4200 50  0001 C CNN
+F 1 "GND" H 3350 4400 50  0000 C CNN
+F 2 "" H 3200 4450 50  0001 C CNN
+F 3 "" H 3200 4450 50  0001 C CNN
+	1    3200 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0108
+U 1 1 61222AC6
+P 3200 2050
+F 0 "#PWR0108" H 3200 1900 50  0001 C CNN
+F 1 "+3.3V" H 3215 2223 50  0000 C CNN
+F 2 "" H 3200 2050 50  0001 C CNN
+F 3 "" H 3200 2050 50  0001 C CNN
+	1    3200 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 2050 3200 2150
+Wire Wire Line
+	6250 2950 6150 2950
+Wire Wire Line
+	6250 3150 6150 3150
+Wire Wire Line
+	6150 3150 6150 3250
+Wire Wire Line
+	4950 1200 4950 2750
+Wire Wire Line
+	4950 1200 5700 1200
+$Comp
+L power:GND #PWR0109
+U 1 1 61240643
+P 5550 5150
+F 0 "#PWR0109" H 5550 4900 50  0001 C CNN
+F 1 "GND" H 5555 4977 50  0000 C CNN
+F 2 "" H 5550 5150 50  0001 C CNN
+F 3 "" H 5550 5150 50  0001 C CNN
+	1    5550 5150
+	1    0    0    -1  
+$EndComp
+Text Label 6300 1500 0    50   ~ 0
+VCC
+Text Label 5450 1500 0    50   ~ 0
+GND
+Wire Wire Line
+	5700 1300 5650 1300
+Text Label 5500 1400 0    50   ~ 0
+SI
+Text Label 6300 1400 0    50   ~ 0
+SCLK
+Text Label 6300 1300 0    50   ~ 0
+SO
+Text Label 5650 1300 0    50   ~ 0
+CS
+Text Label 7950 1400 0    50   ~ 0
+VCC
+Text Label 9050 1900 0    50   ~ 0
+VCC
+Text Label 9100 1300 0    50   ~ 0
+SO
+Text Label 9100 2300 0    50   ~ 0
+SO
+Text Label 9050 1700 0    50   ~ 0
+GND
+Text Label 9100 2700 0    50   ~ 0
+GND
+Text Label 8000 2100 0    50   ~ 0
+SI
+Text Label 7950 2200 0    50   ~ 0
+SCLK
+Wire Wire Line
+	8100 2300 8100 2250
+Wire Wire Line
+	8100 2250 7450 2250
+Wire Wire Line
+	7450 2250 7450 2550
+Text Label 7950 2400 0    50   ~ 0
+VCC
+Text Label 7950 2500 0    50   ~ 0
+VCC
+Text Label 7950 1500 0    50   ~ 0
+VCC
+Text Label 7950 1200 0    50   ~ 0
+SCLK
+Text Label 7950 1100 0    50   ~ 0
+SI
+$Comp
+L Memory_Flash:MX25R3235FM1xx0 U3
+U 1 1 6125EC40
+P 8600 3200
+F 0 "U3" H 9500 3250 50  0000 L CNN
+F 1 "MX25R3235FM1xx0" H 9500 3150 50  0000 L CNN
+F 2 "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" H 8600 2600 50  0001 C CNN
+F 3 "http://www.macronix.com/Lists/Datasheet/Attachments/7534/MX25R3235F,%20Wide%20Range,%2032Mb,%20v1.6.pdf" H 8600 3200 50  0001 C CNN
+	1    8600 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Memory_Flash:MX25R3235FM1xx0 U4
+U 1 1 6125F868
+P 8600 4100
+F 0 "U4" H 9500 4150 50  0000 L CNN
+F 1 "MX25R3235FM1xx0" H 9500 4050 50  0000 L CNN
+F 2 "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" H 8600 3500 50  0001 C CNN
+F 3 "http://www.macronix.com/Lists/Datasheet/Attachments/7534/MX25R3235F,%20Wide%20Range,%2032Mb,%20v1.6.pdf" H 8600 4100 50  0001 C CNN
+	1    8600 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Memory_Flash:MX25R3235FM1xx0 U5
+U 1 1 6126EB8F
+P 8600 5000
+F 0 "U5" H 9500 5050 50  0000 L CNN
+F 1 "MX25R3235FM1xx0" H 9500 4950 50  0000 L CNN
+F 2 "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" H 8600 4400 50  0001 C CNN
+F 3 "http://www.macronix.com/Lists/Datasheet/Attachments/7534/MX25R3235F,%20Wide%20Range,%2032Mb,%20v1.6.pdf" H 8600 5000 50  0001 C CNN
+	1    8600 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Memory_Flash:MX25R3235FM1xx0 U6
+U 1 1 6126ED49
+P 8600 5900
+F 0 "U6" H 9500 5950 50  0000 L CNN
+F 1 "MX25R3235FM1xx0" H 9500 5850 50  0000 L CNN
+F 2 "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" H 8600 5300 50  0001 C CNN
+F 3 "http://www.macronix.com/Lists/Datasheet/Attachments/7534/MX25R3235F,%20Wide%20Range,%2032Mb,%20v1.6.pdf" H 8600 5900 50  0001 C CNN
+	1    8600 5900
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	9250 2800 9350 2700
+Entry Wire Line
+	9250 3200 9350 3100
+Entry Wire Line
+	9250 3600 9350 3500
+Entry Wire Line
+	9250 3700 9350 3600
+Entry Wire Line
+	9250 4100 9350 4000
+Entry Wire Line
+	9250 4500 9350 4400
+Entry Wire Line
+	9250 4600 9350 4500
+Entry Wire Line
+	9250 5000 9350 4900
+Entry Wire Line
+	9250 5400 9350 5300
+Entry Wire Line
+	9250 5900 9350 5800
+Entry Wire Line
+	9250 6300 9350 6200
+Wire Wire Line
+	8800 6300 9250 6300
+Wire Wire Line
+	9100 5900 9250 5900
+Entry Wire Line
+	9250 5500 9350 5400
+Wire Wire Line
+	8800 5500 9250 5500
+Wire Wire Line
+	8800 5400 9250 5400
+Wire Wire Line
+	9100 5000 9250 5000
+Wire Wire Line
+	8800 4600 9250 4600
+Wire Wire Line
+	8800 4500 9250 4500
+Wire Wire Line
+	9100 4100 9250 4100
+Wire Wire Line
+	8800 3700 9250 3700
+Wire Wire Line
+	8800 3600 9250 3600
+Wire Wire Line
+	9100 3200 9250 3200
+Wire Wire Line
+	8800 2800 9250 2800
+Entry Wire Line
+	7850 2900 7950 3000
+Entry Wire Line
+	7850 3000 7950 3100
+Entry Wire Line
+	7850 3200 7950 3300
+Entry Wire Line
+	7850 3300 7950 3400
+Entry Wire Line
+	7850 3800 7950 3900
+Entry Wire Line
+	7850 3900 7950 4000
+Entry Wire Line
+	7850 4100 7950 4200
+Entry Wire Line
+	7850 4200 7950 4300
+Entry Wire Line
+	7850 4700 7950 4800
+Entry Wire Line
+	7850 4800 7950 4900
+Entry Wire Line
+	7850 5000 7950 5100
+Entry Wire Line
+	7850 5100 7950 5200
+Entry Wire Line
+	7850 5600 7950 5700
+Entry Wire Line
+	7850 5700 7950 5800
+Entry Wire Line
+	7850 5900 7950 6000
+Entry Wire Line
+	7850 6000 7950 6100
+Wire Wire Line
+	7950 6100 8100 6100
+Wire Wire Line
+	7950 6000 8100 6000
+Wire Wire Line
+	7950 5800 8100 5800
+Wire Wire Line
+	7950 5700 8100 5700
+Wire Wire Line
+	7950 4300 8100 4300
+Wire Wire Line
+	7950 4200 8100 4200
+Wire Wire Line
+	7950 4000 8100 4000
+Wire Wire Line
+	7950 3900 8100 3900
+Wire Wire Line
+	7950 3000 8100 3000
+Wire Wire Line
+	7950 3100 8100 3100
+Wire Wire Line
+	7950 3300 8100 3300
+Wire Wire Line
+	7950 3400 8100 3400
+Wire Wire Line
+	8100 3200 8100 3150
+Wire Wire Line
+	8100 3150 7750 3150
+Wire Wire Line
+	7750 3150 7750 2650
+Wire Wire Line
+	7750 2650 7250 2650
+Wire Wire Line
+	8100 4100 8100 4050
+Wire Wire Line
+	8100 4050 7650 4050
+Wire Wire Line
+	7650 4050 7650 2750
+Wire Wire Line
+	7650 2750 7250 2750
+Wire Wire Line
+	8100 5000 8100 4950
+Wire Wire Line
+	8100 4950 7550 4950
+Wire Wire Line
+	7550 4950 7550 2850
+Wire Wire Line
+	7550 2850 7250 2850
+Wire Wire Line
+	8100 5900 8100 5850
+Wire Wire Line
+	8100 5850 7450 5850
+Wire Wire Line
+	7450 5850 7450 2950
+Wire Wire Line
+	7450 2950 7250 2950
+Wire Wire Line
+	7950 5100 8100 5100
+Wire Wire Line
+	7950 5200 8100 5200
+Wire Wire Line
+	7950 4900 8100 4900
+Wire Wire Line
+	7950 4800 8100 4800
+NoConn ~ 7250 3050
+NoConn ~ 7250 3150
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 61305CD8
+P 6550 2000
+F 0 "#FLG0101" H 6550 2075 50  0001 C CNN
+F 1 "PWR_FLAG" H 6550 2173 50  0000 C CNN
+F 2 "" H 6550 2000 50  0001 C CNN
+F 3 "~" H 6550 2000 50  0001 C CNN
+	1    6550 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 61306EB0
+P 6950 3550
+F 0 "#FLG0102" H 6950 3625 50  0001 C CNN
+F 1 "PWR_FLAG" H 6950 3723 50  0000 C CNN
+F 2 "" H 6950 3550 50  0001 C CNN
+F 3 "~" H 6950 3550 50  0001 C CNN
+	1    6950 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 3550 6750 3550
+Connection ~ 6750 3550
+Wire Wire Line
+	6750 3550 6750 3600
+Wire Wire Line
+	6550 2000 6550 2050
+Wire Wire Line
+	6550 2050 6750 2050
+Connection ~ 6750 2050
+Wire Wire Line
+	6750 2050 6750 2150
+Text Label 9100 2800 0    50   ~ 0
+VCC
+Text Label 9150 3200 0    50   ~ 0
+SO
+Text Label 9100 3600 0    50   ~ 0
+GND
+Text Label 9100 3700 0    50   ~ 0
+VCC
+Text Label 9150 4100 0    50   ~ 0
+SO
+Text Label 9100 4500 0    50   ~ 0
+GND
+Text Label 9100 4600 0    50   ~ 0
+VCC
+Text Label 9150 5000 0    50   ~ 0
+SO
+Text Label 9100 5400 0    50   ~ 0
+GND
+Text Label 9100 5500 0    50   ~ 0
+VCC
+Text Label 9150 5900 0    50   ~ 0
+SO
+Text Label 9100 6300 0    50   ~ 0
+GND
+Text Label 8000 5700 0    50   ~ 0
+SI
+Text Label 7950 5800 0    50   ~ 0
+SCLK
+Text Label 7950 6000 0    50   ~ 0
+VCC
+Text Label 7950 6100 0    50   ~ 0
+VCC
+Text Label 7950 5200 0    50   ~ 0
+VCC
+Text Label 7950 5100 0    50   ~ 0
+VCC
+Text Label 7950 4300 0    50   ~ 0
+VCC
+Text Label 7950 4200 0    50   ~ 0
+VCC
+Text Label 7950 4800 0    50   ~ 0
+SI
+Text Label 7950 4900 0    50   ~ 0
+SCLK
+Text Label 7950 4000 0    50   ~ 0
+SCLK
+Text Label 7950 3900 0    50   ~ 0
+SI
+Text Label 7950 3100 0    50   ~ 0
+SCLK
+Text Label 7950 3000 0    50   ~ 0
+SI
+Text Label 7950 3400 0    50   ~ 0
+VCC
+Text Label 7950 3300 0    50   ~ 0
+VCC
+$Comp
+L power:+3.3V #PWR0110
+U 1 1 6132F827
+P 5800 4950
+F 0 "#PWR0110" H 5800 4800 50  0001 C CNN
+F 1 "+3.3V" H 5815 5123 50  0000 C CNN
+F 2 "" H 5800 4950 50  0001 C CNN
+F 3 "" H 5800 4950 50  0001 C CNN
+	1    5800 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 5050 5550 5050
+Wire Wire Line
+	5550 5050 5550 5150
+Wire Wire Line
+	5300 4950 5800 4950
+Wire Wire Line
+	5300 4850 5500 4850
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J2
+U 1 1 6124AAD4
+P 5000 4850
+F 0 "J2" H 5050 5267 50  0000 C CNN
+F 1 "MCU_CONN" H 4950 4500 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Horizontal" H 5000 4850 50  0001 C CNN
+F 3 "~" H 5000 4850 50  0001 C CNN
+	1    5000 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2750 5500 2750
+Wire Wire Line
+	4500 4850 4800 4850
+Wire Wire Line
+	4450 4950 4800 4950
+Wire Wire Line
+	4400 5050 4800 5050
+Text Label 6050 2450 0    50   ~ 0
+A0
+Text Label 6050 2550 0    50   ~ 0
+A1
+Text Label 6050 2650 0    50   ~ 0
+A2
+$Comp
+L Device:C C2
+U 1 1 613BC3BC
+P 1500 1350
+F 0 "C2" H 1615 1396 50  0000 L CNN
+F 1 "100n" H 1615 1305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 1538 1200 50  0001 C CNN
+F 3 "~" H 1500 1350 50  0001 C CNN
+	1    1500 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 613BEA73
+P 1250 1350
+F 0 "C1" H 1000 1400 50  0000 L CNN
+F 1 "100n" H 950 1300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 1288 1200 50  0001 C CNN
+F 3 "~" H 1250 1350 50  0001 C CNN
+	1    1250 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 613BF460
+P 1250 1600
+F 0 "#PWR03" H 1250 1350 50  0001 C CNN
+F 1 "GND" H 1255 1427 50  0000 C CNN
+F 2 "" H 1250 1600 50  0001 C CNN
+F 3 "" H 1250 1600 50  0001 C CNN
+	1    1250 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 613BFC80
+P 1500 1600
+F 0 "#PWR04" H 1500 1350 50  0001 C CNN
+F 1 "GND" H 1505 1427 50  0000 C CNN
+F 2 "" H 1500 1600 50  0001 C CNN
+F 3 "" H 1500 1600 50  0001 C CNN
+	1    1500 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR02
+U 1 1 613BFF14
+P 1500 1100
+F 0 "#PWR02" H 1500 950 50  0001 C CNN
+F 1 "+3.3V" H 1515 1273 50  0000 C CNN
+F 2 "" H 1500 1100 50  0001 C CNN
+F 3 "" H 1500 1100 50  0001 C CNN
+	1    1500 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR01
+U 1 1 613C0418
+P 1250 1100
+F 0 "#PWR01" H 1250 950 50  0001 C CNN
+F 1 "+3.3V" H 1265 1273 50  0000 C CNN
+F 2 "" H 1250 1100 50  0001 C CNN
+F 3 "" H 1250 1100 50  0001 C CNN
+	1    1250 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 1100 1250 1200
+Wire Wire Line
+	1500 1100 1500 1200
+Wire Wire Line
+	1500 1500 1500 1600
+Wire Wire Line
+	1250 1500 1250 1600
+$Comp
+L MCU_Microchip_ATtiny:ATtiny2313-20SU U8
+U 1 1 6121A2A7
+P 3200 3250
+F 0 "U8" H 3400 4450 50  0000 C CNN
+F 1 "ATtiny2313-20SU" H 3700 4350 50  0000 C CNN
+F 2 "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm" H 3200 3250 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-2543-AVR-ATtiny2313_Datasheet.pdf" H 3200 3250 50  0001 C CNN
+	1    3200 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 4350 3200 4450
+Text Label 3850 3350 0    50   ~ 0
+RXD
+Text Label 3850 3450 0    50   ~ 0
+TXD
+Text Label 5350 4850 0    50   ~ 0
+RST
+$Comp
+L Device:Crystal Y1
+U 1 1 6139DEB4
+P 2000 2850
+F 0 "Y1" H 1900 3000 50  0000 C CNN
+F 1 "16MHz" H 2200 3000 50  0000 C CNN
+F 2 "Crystal:Crystal_SMD_7050-2Pin_7.0x5.0mm_HandSoldering" H 2000 2850 50  0001 C CNN
+F 3 "~" H 2000 2850 50  0001 C CNN
+	1    2000 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 2850 1700 2850
+Wire Wire Line
+	2150 2850 2250 2850
+$Comp
+L power:GND #PWR05
+U 1 1 613B0A6A
+P 1700 3200
+F 0 "#PWR05" H 1700 2950 50  0001 C CNN
+F 1 "GND" H 1705 3027 50  0000 C CNN
+F 2 "" H 1700 3200 50  0001 C CNN
+F 3 "" H 1700 3200 50  0001 C CNN
+	1    1700 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 613B0EC7
+P 2250 3200
+F 0 "#PWR06" H 2250 2950 50  0001 C CNN
+F 1 "GND" H 2255 3027 50  0000 C CNN
+F 2 "" H 2250 3200 50  0001 C CNN
+F 3 "" H 2250 3200 50  0001 C CNN
+	1    2250 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 613B152A
+P 1700 3000
+F 0 "C3" H 1815 3046 50  0000 L CNN
+F 1 "18p" H 1815 2955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1738 2850 50  0001 C CNN
+F 3 "~" H 1700 3000 50  0001 C CNN
+	1    1700 3000
+	1    0    0    -1  
+$EndComp
+Connection ~ 1700 2850
+$Comp
+L Device:C C4
+U 1 1 613B182A
+P 2250 3000
+F 0 "C4" H 2365 3046 50  0000 L CNN
+F 1 "18p" H 2365 2955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2288 2850 50  0001 C CNN
+F 3 "~" H 2250 3000 50  0001 C CNN
+	1    2250 3000
+	1    0    0    -1  
+$EndComp
+Connection ~ 2250 2850
+Wire Wire Line
+	2250 3200 2250 3150
+Wire Wire Line
+	1700 3200 1700 3150
+NoConn ~ 3800 3850
+NoConn ~ 3800 3750
+NoConn ~ 3800 3650
+NoConn ~ 3800 3550
+Wire Wire Line
+	2600 2450 2550 2450
+Wire Wire Line
+	2550 2450 2550 1800
+Wire Wire Line
+	2550 1800 4600 1800
+Wire Wire Line
+	3800 2750 4950 2750
+Connection ~ 4950 2750
+Wire Wire Line
+	3800 3150 4500 3150
+Wire Wire Line
+	3800 3050 4450 3050
+Text Label 4000 1800 0    50   ~ 0
+PA2
+Text Label 4100 2850 0    50   ~ 0
+PB4
+Connection ~ 4400 2950
+Wire Wire Line
+	4400 2950 3800 2950
+Wire Wire Line
+	4400 2950 4400 5050
+Connection ~ 4450 3050
+Wire Wire Line
+	4450 3050 4450 4950
+Connection ~ 4500 3150
+Wire Wire Line
+	4500 3150 4500 4850
+Wire Wire Line
+	4400 2650 4400 2950
+Wire Wire Line
+	4400 2650 6250 2650
+Wire Wire Line
+	4450 2550 4450 3050
+Wire Wire Line
+	4450 2550 6250 2550
+Wire Wire Line
+	4500 2450 4500 3150
+Wire Wire Line
+	4500 2450 6250 2450
+Wire Wire Line
+	4550 3350 4550 4750
+Wire Wire Line
+	4550 4750 4800 4750
+Wire Wire Line
+	3800 3350 4550 3350
+Wire Wire Line
+	5650 3050 6250 3050
+Wire Wire Line
+	5650 1300 5650 3050
+Wire Wire Line
+	5500 2750 5500 4850
+Wire Wire Line
+	4600 4650 4600 1800
+Wire Wire Line
+	4600 4650 4800 4650
+Wire Wire Line
+	5450 4750 5450 3450
+Wire Wire Line
+	3800 3450 5450 3450
+Wire Wire Line
+	5300 4750 5450 4750
+Wire Wire Line
+	5400 4650 5400 2850
+Wire Wire Line
+	3800 2850 5400 2850
+Wire Wire Line
+	5300 4650 5400 4650
+Wire Wire Line
+	2250 2850 2600 2850
+Wire Wire Line
+	1700 2650 1700 2850
+Wire Wire Line
+	1700 2650 2600 2650
+$Comp
+L Connector:TestPoint PD6
+U 1 1 615E65CF
+P 3900 3950
+F 0 "PD6" V 3854 4138 50  0000 L CNN
+F 1 "TestPoint" V 3945 4138 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4100 3950 50  0001 C CNN
+F 3 "~" H 4100 3950 50  0001 C CNN
+	1    3900 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3800 3950 3900 3950
+$Comp
+L Connector:TestPoint PB0
+U 1 1 61619213
+P 3850 2450
+F 0 "PB0" V 3804 2638 50  0000 L CNN
+F 1 "TestPoint" V 3700 2800 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4050 2450 50  0001 C CNN
+F 3 "~" H 4050 2450 50  0001 C CNN
+	1    3850 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint PB1
+U 1 1 61628FC3
+P 3850 2550
+F 0 "PB1" V 3804 2738 50  0000 L CNN
+F 1 "TestPoint" V 3600 2900 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4050 2550 50  0001 C CNN
+F 3 "~" H 4050 2550 50  0001 C CNN
+	1    3850 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint PB2
+U 1 1 6162924E
+P 3850 2650
+F 0 "PB2" V 3804 2838 50  0000 L CNN
+F 1 "TestPoint" V 3500 3000 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4050 2650 50  0001 C CNN
+F 3 "~" H 4050 2650 50  0001 C CNN
+	1    3850 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3800 2450 3850 2450
+Wire Wire Line
+	3800 2550 3850 2550
+Wire Wire Line
+	3800 2650 3850 2650
+Wire Wire Line
+	6200 1500 6950 1500
+Wire Wire Line
+	5250 1500 5700 1500
+Wire Bus Line
+	5350 750  5350 1400
+Wire Bus Line
+	6650 750  6650 1400
+Wire Bus Line
+	9350 750  9350 6200
+Wire Bus Line
+	7850 750  7850 6050
+$EndSCHEMATC
