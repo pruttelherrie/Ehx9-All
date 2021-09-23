@@ -48,3 +48,6 @@ The multiplexer firmware was made with the Arduino IDE.
 
 The controller firmware was made with VSCode + PlatformIO.
 
+## Walkthrough of a mod
+
+TBD: text and images.
