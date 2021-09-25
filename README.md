@@ -1,6 +1,6 @@
 ## Ehx9-All: combining and programming EHX '9' pedals
 
-The '9' series of pedals is a range of polyphonic synthesis pedals for guitar. The
+Electro Harmonix' 9 series of pedals is a range of polyphonic synthesis pedals for guitar. The
 effects and sounds that can be obtained are superb, however they have a few shortcomings: 
 first of all they are not programmable (i.e. there's only one setting, no way to store 
 favourites and recall them quickly) and if you have more than one, they tend to take
