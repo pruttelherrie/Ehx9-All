@@ -63,11 +63,22 @@ void CALLBACK_FUNCTION onStoreAll(int id) {
     tft.setTextColor(TFT_LIGHTGREY);
     tft.setFreeFont(&FreeSans18pt7b);
     tft.drawString("Storing...", 120, 120);
-    EEPROM.put(0, 0x00); // EEPROM initialised
-    EEPROM.put(1, presetParams);
-    EEPROM.put(1 + sizeof(presetParams), settings);
+
+    const byte * p = (const byte*) &presetParams;
+    unsigned int i;
+    eeprom_buffered_write_byte(0, 0); // Set first byte to 0 so we know it's initialised
+    for (i = 1; i < 1 + sizeof(presetParams); i++) {
+        eeprom_buffered_write_byte(i, *p++);
+    }
+    p = (const byte *) &settings;
+    for (i = 1 + sizeof(presetParams); i < 1 + sizeof(presetParams) + sizeof(settings); i++) {
+        eeprom_buffered_write_byte(i, *p++);
+    }
+    eeprom_buffer_flush(); // Write eeprom emulation buffer to flash page
+
     renderer.takeOverDisplay(myDisplayFunction);
 }
+
 
 void CALLBACK_FUNCTION onSettingsMIDIChannel(int id) {
     settings.midichannel = menuSettingsMIDIChannel.getCurrentValue();
