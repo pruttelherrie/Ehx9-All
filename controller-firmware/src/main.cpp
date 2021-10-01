@@ -165,13 +165,16 @@ void myDisplayFunction(unsigned int encoderValue, RenderPressMode clicked) {
 }
 
 void setup() {
-    uint8_t eeprom_initialised=0;
-    EEPROM.get(0, eeprom_initialised);
-    if(eeprom_initialised != 0xFF) { // not a brand new ROM
-      EEPROM.get(1, presetParams);
-      EEPROM.get(1 + sizeof(presetParams), settings);
-    } else {
-        // FIXME: reset all presets!
+    eeprom_buffer_fill(); // Copy flash page to eeprom emulation buffer
+
+    uint8_t eeprom_initialised = eeprom_buffered_read_byte(0);
+    byte *p = (byte *) &presetParams[0];
+    for (uint16_t i = 1; i < 1 + sizeof(presetParams); i++) {
+        *p++ = eeprom_buffered_read_byte(i);
+    }
+    p = (byte *) &settings;
+    for (uint16_t i = 1 + sizeof(presetParams); i < 1 + sizeof(presetParams) + sizeof(settings); i++) {
+        *p++ = eeprom_buffered_read_byte(i);
     }
 
     for(uint8_t i=0; i<4; i++) {   // set up knob (pot) outputs
