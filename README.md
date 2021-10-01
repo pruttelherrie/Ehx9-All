@@ -1,5 +1,5 @@
 ## WARNING! 
-Do not use the EEPROM store code from before 2021-10-01! It will eat up you flash writes like candy because of the braindead EEPROM.write lib in the stm32duino core. Fixed in callbacks.h
+Do not use the EEPROM store code from before 2021-10-01! It will eat up you flash writes like candy because of the braindead EEPROM.write lib in the stm32duino core. Fixed in callbacks.h and main.cpp, dd 2021-10-01
 
 ## Ehx9-All: combining and programming EHX '9' pedals
 
